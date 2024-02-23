@@ -13,6 +13,12 @@ namespace bruhlang {
                 Console.WriteLine(string.Join(" ", args));
                 return null;
             }));
+
+            Env.Add("rand", (Func<dynamic?[], dynamic?>)((dynamic?[] args) => {;
+            Random rnd = new Random();
+            int num = rnd.Next();
+                return num;
+            }));
         }
     }
 }
