@@ -15,7 +15,7 @@ namespace bruhlang {
             }));
 
             Env.Add("rand", (Func<dynamic?[], dynamic?>)((dynamic?[] args) => {;
-                return (double) Random.Shared.Next;
+                return (double) Random.Shared.Next();
             }));
         }
     }
